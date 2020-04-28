@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<h1>Hello Javascript</h1>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+
+		var a=5;
+		var b=6;
+		var c=3;
+		var result = a + (b*c);
+		document.getElementById("demo").innerHTML = result;
+	</script>
+
+	<script type="text/javascript">
+		var a=5;
+		a++;
+		--a;
+		document.getElementById('demo1').innerHTML = a;
+	</script>
+
+	<script type="text/javascript">
+		var a=4;
+		var b = "5";
+		var c = a+b;
+		document.getElementById("demo2").innerHTML = c;
+	</script>
+	<script type="text/javascript">
+		var a=10;
+		var b=20;
+		var c=a+b;
+		var d = a-b;
+		var e = a/b;
+		var f = a*b;
+
+		document.getElementById("demo3").innerHTML = c + "<br>"+ d + "<br>"+ e + "<br>"+ f;
+
+	</script>
+
+
+</body>
+</html>

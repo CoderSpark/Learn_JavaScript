@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var course = new Object();
+	course.title = "JavaScript Essential Trainnig Book";
+	course.instrutor = "abc xyz";
+	course.level = 1;
+	course.publish = true;
+	console.log(course.title);
+
+	console.log(course.instrutor);
+	</script>
+
+	<script type="text/javascript">
+		var course = {
+			title :"JavaScript Essential",
+			instrutor: "abc xyz",
+			level : 1,
+			published : true,
+			views : 0,
+
+			updateViews: function () {
+				// body...
+				return ++course.views;
+			}
+
+		}
+
+		console.log(course);
+		console.log(course.updateViews());
+		console.log(course.views);
+
+	</script>
+
+	<script type="text/javascript">
+		function Course(title,instrutor){
+			this.title = title;
+			this.instrutor = instrutor;
+		}
+var course01 = new Course("paddy","xyz");
+console.log(course01);
+	</script>
+
+</body>
+</html>

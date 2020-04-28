@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function doSomeMath() {
+		var a = 5;
+		var b = 6;
+
+		function multipy(){
+			var result = a*b;
+			return result;
+		}
+		return multipy;
+
+				}
+		var result = doSomeMath();
+		console.log(result());
+	</script>
+
+	<script type="text/javascript">
+		function giveMeEMS(pixles) {
+			// body...
+			var baseValue = 16;
+
+			function doTheMath(){
+				return pixles;
+
+			}
+			return doTheMath;
+		}
+
+		var smallsize = giveMeEMS(10);
+		var largesize = giveMeEMS(20);
+		console.log(largesize());
+		console.log(smallsize());
+	</script>
+
+</body>
+</html>
